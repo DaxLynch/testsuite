@@ -5,8 +5,8 @@ on: [push, pull_request]
 jobs:
   test:
     runs-on: ubuntu-latest
-  #container:
-   #         image: ecpe4s/e4s-cuda
+    container:
+      image: ecpe4s/e4s-cuda
     steps:
       - name: Check out repository
         uses: actions/checkout@v2
